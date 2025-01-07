@@ -32,9 +32,7 @@ jobs:
         run: npm ci
 
       - name: Build Next.js Site 🏗️
-        run: |
-          npm run build
-          npm run export
+        run: next build
 
       - name: Verify output directory
         run: ls -la ./out

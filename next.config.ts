@@ -1,9 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  basePath: "/out",
   output: 'export',
-  reactStrictMode: true,
+  basePath: "/out",
+  reactStrictMode: true
   /* config options here */
 };
 
