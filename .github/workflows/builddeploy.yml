@@ -1,4 +1,5 @@
 name: publish-to-github-pages
+
 on:
   push:
     branches:
@@ -21,21 +22,22 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
 
-      - name: Setup Node.js ⚙️ - Cache dependencies ⚡ - Install dependencies 🔧
-        uses: ./.github/workflows/setup-node
-
-      - name: Setup Pages ⚙️
-        uses: actions/configure-pages@v4
+      - name: Setup Node.js ⚙️
+        uses: actions/setup-node@v3
         with:
-          static_site_generator: next
+          node-version: 18
+          cache: npm
 
-      - name: Build with Next.js 🏗️
+      - name: Install dependencies 🔧
+        run: npm ci
+
+      - name: Build Next.js Site 🏗️
         run: |
           npm run build
           npm run export
 
       - name: Verify output directory
-        run: ls -la .
+        run: ls -la ./out
 
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
