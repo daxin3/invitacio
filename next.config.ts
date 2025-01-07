@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: "/out",
+  basePath: "/sample-next-app",
   reactStrictMode: true
   /* config options here */
 };
