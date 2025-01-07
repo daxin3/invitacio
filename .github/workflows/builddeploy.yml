@@ -30,11 +30,7 @@ jobs:
           static_site_generator: next
 
       - name: Build with Next.js 🏗️
-        run: npm run build
-
-        # Debug: Check if the 'out' directory exists
-      - name: Verify output directory
-        run: ls -la ./out
+        run: npx next build
 
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
