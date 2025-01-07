@@ -30,7 +30,9 @@ jobs:
           static_site_generator: next
 
       - name: Build with Next.js 🏗️
-        run: npx next build
+        run: |
+          npm run build
+          npm run export
 
       - name: Verify output directory
         run: ls -la .
