@@ -12,7 +12,7 @@ function RenderQueryParam() {
   const searchParams = useSearchParams()
   let destinatari = searchParams.get('x')
   if(destinatari != null && typeof destinatari === 'string') {
-    let words = destinatari.split(" ")
+    const words = destinatari.split(" ")
     for (let i = 0; i < words.length; i++) {
       if (words[i] != 'i' && words[i] != '&' && words[i] != 'y')
       words[i] = words[i][0].toUpperCase() + words[i].substr(1);
