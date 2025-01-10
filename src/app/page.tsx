@@ -3,13 +3,27 @@
 import { useSearchParams } from 'next/navigation'
 import Image from "next/image";
 import styles from "./page.module.css";
+import { Suspense } from 'react'
 
+// !!!!!!!!!!!!!!!!!!! FIX TODO
+// Hem d'aplicar la solució https://nextjs.org/docs/messages/missing-suspense-with-csr-bailout
 
+function RenderQueryParam() {
+  const searchParams = useSearchParams()
+  let destinatari = searchParams.get('x')
+  if(destinatari != null && typeof destinatari === 'string') {
+    let words = destinatari.split(" ")
+    for (let i = 0; i < words.length; i++) {
+      if (words[i] != 'i' && words[i] != '&' && words[i] != 'y')
+      words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+  }
+  destinatari = words.join(" ");
+  }
+  return destinatari
+}
 
 export default function Home() {
-  const searchParams = useSearchParams()
- 
-  const destinatari = searchParams.get('x')
+  
 
   return (
     <div className={styles.page}>
@@ -27,7 +41,9 @@ export default function Home() {
             Get started by editing <code>src/app/page.tsx</code>.
           </li>
           <li>Save and see your changes instantly.</li>
-          <li>{destinatari}</li>
+          <Suspense>
+          <li><RenderQueryParam/></li>
+          </Suspense>
         </ol>
 
         <div className={styles.ctas}>
