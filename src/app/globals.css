@@ -1,19 +1,22 @@
+
 :root {
-  --background: #ffffff;
+  --background: #f8f9fa;
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #f8f9fa;
   }
 }
 
 html,
 body {
-  max-width: 100vw;
+  margin:    0 auto;
+  max-width: 1280px;
   overflow-x: hidden;
+  
 }
 
 body {
@@ -22,6 +25,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-shadow: 0px 0px 8px #dbdbdb;
+  
+}
+
+footer {
+  background: #fbe9cd;
+    background: linear-gradient(3deg, #f5cfc8 52%, #f7f1e7 95%);
 }
 
 * {
@@ -33,6 +43,20 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+section {
+  padding: 30px;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+@media (max-width: 600px) {
+  section {
+    padding: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,3 +1,13 @@
+.style-script-regular {
+  font-family: "Style Script", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.h1{
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .page {
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
@@ -6,12 +16,15 @@
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
 
-  display: grid;
+  background-color: #fff5ed;
+  display: flow;
   grid-template-rows: 20px 1fr 20px;
   align-items: center;
   justify-items: center;
   min-height: 100svh;
-  padding: 80px;
+  /*padding: 80px;
+  padding-left: 230px;
+  padding-right: 230px;*/
   gap: 64px;
   font-family: var(--font-geist-sans);
 }
@@ -128,8 +141,8 @@ a.secondary {
 
 @media (max-width: 600px) {
   .page {
-    padding: 32px;
-    padding-bottom: 80px;
+    padding: 0px;
+    padding-bottom: 0px;
   }
 
   .main {
@@ -165,4 +178,138 @@ a.secondary {
   .logo {
     filter: invert();
   }
+}
+
+.columna_blocs_horaris_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.columna_bloc_horari_item {
+  width: 405px;
+}
+
+.bloc_hora {
+  margin: 12px;
+}
+
+.bloc_titol_hora {
+  background-color: #ffdccb;
+  font-size: 1.3em;
+  padding: 5px;
+  padding-left: 15px;
+}
+
+.bloc_titol_hora_f {
+  background-color: #ffe8b5;
+  font-size: 1.3em;
+  padding: 5px;
+  padding-left: 15px;
+}
+
+.bloc_subtitol{
+  padding-left: 15px;
+}
+.bloc_detall {
+  padding-left: 15px;
+}
+
+.img-box {
+    
+    display: grid;
+    height: 100%;
+    
+}
+.center-fit {
+    
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+.header_background {
+  background: #fbe9cd;
+    background: linear-gradient(3deg, #fdf2e0 0%, #c6d9ef 100%);
+}
+
+.mid_background {
+  background: #fbe9cd;
+    background: linear-gradient(3deg, #fdf2e0 0%, #f3d7bf 100%);
+}
+
+
+
+/* Contenidor principal */
+.photo_container {
+  position: relative;
+  width: 100%;
+  /*max-width: 700px; /* Augmentem l'amplada màxima */
+  min-width: 400px; /* Evita que sigui massa petit en pantalles petites */
+  height: 320px; /* L'alçada es pot ajustar segons necessitis */
+  margin: auto;
+  /*background: #d4af8c;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;*/
+  padding: 20px;
+  /*overflow: hidden;*/
+  background: #fbe9cd;
+  background: linear-gradient(3deg, #fdf2e0 0%, #f3d7bf 100%);
+}
+
+
+/* Imatges (fotos) */
+.photo {
+  position: absolute;
+  width: 35%;
+  max-width: 170px;
+  border: 5px solid white;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  
+}
+
+/* Posicionament dinàmic de les fotos */
+.photo:nth-child(1) { top: 5%; left: 10%; transform: rotate(-10deg); }
+.photo:nth-child(2) { top: 40%; left: 22%; transform: rotate(5deg); }
+.photo:nth-child(3) { top: 00%; left: 48%; transform: rotate(-3deg); }
+.photo:nth-child(4) { top: 77%; left: 62%; transform: rotate(10deg); }
+.photo:nth-child(5) { top: -5%; left: 73%; transform: rotate(-13deg); }
+.photo:nth-child(6) { top: 28%; left: 37%; transform: rotate(8deg); }
+.photo:nth-child(7) { top: 40%; left: 15%; transform: rotate(-3deg); }
+.photo:nth-child(8) { top: 20%; left: 40%; transform: rotate(12deg); }
+.photo:nth-child(9) { top: 55%; left: 55%; transform: rotate(-8deg); }
+.photo:nth-child(10) { top: 70%; left: 80%; transform: rotate(6deg); }
+.photo:nth-child(11) { top: 5%; left: 25%; transform: rotate(-7deg); }
+.photo:nth-child(12) { top: 15%; left: -3%; transform: rotate(-4deg); }
+.photo:nth-child(13) { top: 30%; left: 60%; transform: rotate(-9deg); }
+.photo:nth-child(14) { top: 75%; left: 90%; transform: rotate(14deg); }
+.photo:nth-child(15) { top: 65%; left: 5%; transform: rotate(-4deg); }
+.photo:nth-child(16) { top: 15%; left: 85%; transform: rotate(7deg); }
+.photo:nth-child(17) { top: 50%; left: 90%; transform: rotate(-11deg); }
+.photo:nth-child(18) { top: 10%; left: 60%; transform: rotate(9deg); }
+.photo:nth-child(19) { top: 35%; left: 5%; transform: rotate(-5deg); }
+.photo:nth-child(20) { top: 80%; left: 50%; transform: rotate(15deg); }
+.photo:nth-child(21) { top: 55%; left: 75%; transform: rotate(-6deg); }
+.photo:nth-child(22) { top: 25%; left: 90%; transform: rotate(5deg); }
+.photo:nth-child(23) { top: 65%; left: 90%; transform: rotate(-3deg); }
+.photo:nth-child(24) { top: 40%; left: 35%; transform: rotate(10deg); }
+.photo:nth-child(25) { top: 5%; left: 50%; transform: rotate(-12deg); }
+.photo:nth-child(26) { top: 70%; left: 10%; transform: rotate(7deg); }
+.photo:nth-child(27) { top: 85%; left: 80%; transform: rotate(-8deg); }
+.photo:nth-child(28) { top: 5%; left: 75%; transform: rotate(4deg); }
+.photo:nth-child(29) { top: 20%; left: 15%; transform: rotate(-6deg); }
+.photo:nth-child(30) { top: 50%; left: 45%; transform: rotate(8deg); }
+.photo:nth-child(31) { top: 10%; left: 30%; transform: rotate(-5deg); }
+.photo:nth-child(32) { top: 40%; left: 70%; transform: rotate(13deg); }
+.photo:nth-child(33) { top: 75%; left: 60%; transform: rotate(-9deg); }
+.photo:nth-child(34) { top: 85%; left: 25%; transform: rotate(11deg); }
+.photo:nth-child(35) { top: 5%; left: 5%; transform: rotate(-15deg); }
+
+
+/* Efecte al passar el ratolí */
+.photo:hover {
+  transform: scale(1.2) rotate(0deg);
+  z-index: 10;
 }
