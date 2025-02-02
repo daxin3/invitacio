@@ -6,7 +6,6 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { Suspense } from 'react'
 
-import { Style_Script } from "next/font/google";
 
 /*const styleScript = Style_Script({
   weight: '400',
