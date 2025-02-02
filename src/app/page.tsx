@@ -78,18 +78,24 @@ export default function Home() {
       
       <div className={styles.photo_container}>
       {Array.from({ length: totalImages }).map((_, index) => (
-        <img
+        <Image
           key={index}
           src={`/sample-next-app/photos/img${index}.jpg`}
           alt={`Foto ${index + 1}`}
+          width={0}
+          height={0}
+          style={{ width: '100%', height: 'auto' }}
           className={`${styles.photo} ${styles[`photo${index + 1}`]}`}
         />
         
       ))}
-      <img
+      <Image
           key={totalImages + 1}
           src={`/sample-next-app/photos/gif1.gif`}
           alt={`Foto ${totalImages + 2}`}
+          width={0}
+          height={0}
+          style={{ width: '100%', height: 'auto' }}
           className={`${styles.photo}`}
         />
     </div>
@@ -212,7 +218,7 @@ export default function Home() {
           </li>
           <li>Save and see your changes instantly.</li>
           <Suspense>
-          <li><RenderQueryParam/></li>
+          <li><RenderQueryName/></li>
           </Suspense>
         </ol>
 
