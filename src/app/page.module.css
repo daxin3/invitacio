@@ -237,7 +237,7 @@ a.secondary {
 .call_to_action_background {
   position: relative;
   width: 100%;
-  height: 320px;
+  height: 293px;
   margin: auto;
   background: #fbe9cd;
   background: linear-gradient(3deg, #f9e0d4 0%, #fdf2e0 100%)
@@ -327,4 +327,100 @@ a.secondary {
   top: 15%;
   padding: 19px;
   justify-self: anchor-center;
+}
+
+.main_botton {
+  background-color: #ffa584;
+    color: white;
+    margin: 35px;
+    padding-top: 7px;
+    padding-bottom: 1px;
+    width: 400px;
+    justify-items: center;
+    justify-self: center;
+    border-radius: 6px;
+    box-shadow: 2px 2px 3px 0px #7373736e;
+}
+
+.contenidor_targeta_info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.targeta_info {
+  /*margin: 10px;*/
+  padding: 10px;
+  background-color: antiquewhite;
+  flex-grow: 1;
+
+    min-width: 400px;
+    max-width: 440px;
+    background-color: antiquewhite;
+    /* flex-grow: 1; */
+    margin-bottom: 15px;
+}
+
+.contenidor_targeta_info_b {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Espaciado entre elementos */
+}
+
+.targeta_info_a {
+  flex: 1 1 150px;
+    background-color: #ffdccb;
+    padding: 20px;
+    background-image: linear-gradient(#fdefdef0, #fde6de), url(/invitacio/ajuntament-img.jpg);
+    background-position: center;
+    background-size: 113%;
+  text-align: center;
+  }
+
+.targeta_info_b {
+  flex: 1 1 150px;
+  background-color: #ffdccb;
+  padding: 20px;
+  background-image: linear-gradient(#d5e5daeb, #e5ebe1), url(/invitacio/masia-img.jpg);
+  background-position: center;
+  background-size: 113%;
+  text-align: center;
+}
+
+.targeta_info_c {
+  flex: 1 1 150px; /* Crece (1), puede encoger (1), mínimo 150px */
+  background-color: #ffdccb;
+  padding: 20px;
+  background-image: linear-gradient(#f7e0ecf0, #e9e1e9), url(/invitacio/vestido.png);
+  background-position: center;
+  background-size: 113%;
+  text-align: center;
+}
+
+.targeta_info_d {
+  flex: 1 1 150px; /* Crece (1), puede encoger (1), mínimo 150px */
+  background-color: #ffdccb;
+  padding: 20px;
+  background-image: linear-gradient(#e5ddd5f5, #f1eae1), url(/invitacio/follo2.jpeg);
+  background-position: center;
+  background-size: 113%;
+  text-align: center;
+}
+
+/* Para asegurar que ocupen todo el ancho en móviles */
+@media (max-width: 600px) {
+  .item {
+    flex: 1 1 100%; /* Cada item ocupa todo el ancho */
+  }
+}
+
+
+.image_emo_container {
+  min-width: 300px;
+  width: 70px;
+  display: inline-block;
+}
+
+.inline_block {
+  padding: 10px;
 }

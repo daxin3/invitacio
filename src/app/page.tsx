@@ -47,32 +47,32 @@ function SectionCarta() {
         <Suspense>
           <h3>Hola <RenderQueryName />,</h3>
         </Suspense><br />
-        <p>Estem super feliços! <b>Reserva&apos;t la data</b> i prepara&apos;t per a riure, menjar, beure,
+        <p>Estem superfeliços! <b>Reserva&apos;t la data</b> i prepara&apos;t per a riure, menjar, beure,
           ballar i passar-ho bé amb nosaltres.</p>
-        <p>Fa 9 anys ens vam conèixer en la universitat, segurament en una de les etapes més dures
-          que hem viscut de moment, encara que ara mateix dubtem si no és més dur l&apos;organització d&apos;un
+        <p>Fa 9 anys ens vam conèixer a la universitat, segurament en una de les etapes més dures
+          que hem viscut fins al moment, encara que ara mateix dubtem si no és més dur l&apos;organització d&apos;un
           casament.
         </p>
-        <p>Tres anys més tard varem decidir començar a viure junts, sense saber que uns mesos més
-          tard vindria una pandèmia que ens obligaria a passar el 200% del temps plegats. I per si
-          no fos prou, també treballant en la mateixa empresa.</p>
-        <p>Superada aquesta prova, ens enamorem cegament de l&apos;amor més fidel i real que existeix,
-          la nostra benvolguda Lluna, que ens va convertir en mamà i papà, i que ens prepara per al
+        <p>Tres anys més tard vàrem decidir començar a viure junts, sense saber que uns mesos més
+          tard arribaria una pandèmia que ens obligaria a passar el 200% del temps plegats. I per si
+          no fos prou, també treballant a la mateixa empresa.</p>
+        <p>Superada aquesta prova, ens vam enamorar cegament de l&apos;amor més fidel i real que existeix,
+          la nostra estimada Lluna, que ens va convertir en mare i pare, i que ens prepara per al
           que vindrà més endavant.
         </p>
         <p>
-          Fa ja més d&apos;un any vam decidir donar el grna pas. Una desició cosa molt més comprometedora
-          que unes noces, UNA HIPOTECA!!, així que... Un casament? Serà dit i fet!.
+          Fa ja més d&apos;un any vam decidir donar el gran pas. Una decisió molt més comprometedora
+          que unes noces, UNA HIPOTECA!!, així que... Un casament? Serà cosir i cantar!
         </p>
         <p>
-          Ara vivim deambulant entre províncies. Barcelona, Lleida i Segòvia són les terres on tenim
+          Ara vivim viatjant entre províncies. Barcelona, Lleida i Segòvia són les terres on tenim
           trossets del nostre cor, en cadascuna de les persones que les habiten i que avui esteu
-          llegint aquestes linies.
+          llegint aquestes línies.
         </p>
         <p>Esperem que gaudiu tant com nosaltres del nostre dia. Us enviem una gran abraçada!</p>
         <br />
         <p>Al <b>formulari d&apos;assistència</b> (més a baix) has de confirmar si comptem amb tu
-          i un qüestionari sobre al·lèrgens. Confirma&apos;ns la teva assistència al més aviat possible,
+          i un qüestionari sobre al·lèrgens. Confirma&apos;ns la teva assistència el més aviat possible,
           si us plau. Així organitzar-ho tot ens serà molt més fàcil.
         </p>
         <p><b>Recorda, “La teva presència és el nostre regal més preuat, per això aquesta
@@ -91,7 +91,7 @@ function SectionCarta() {
         <Suspense>
           <h3>Hola <RenderQueryName />,</h3>
         </Suspense><br />
-        <p>¡Estamos super felices! <b>Resérvate la fecha</b> y prepárate para reír, comer, beber, bailar y pasarlo bien con nosotros.</p>
+        <p>¡Estamos superfelices! <b>Resérvate la fecha</b> y prepárate para reír, comer, beber, bailar y pasarlo bien con nosotros.</p>
         <p>Hace 9 años nos conocimos en la universidad, seguramente en una de las etapas más duras que hemos vivido por el momento, aunque ahora mismo dudamos si no es más dura la organización de una boda.
         </p>
         <p>Tres años más tarde nos aventuramos a vivir juntos sin saber que unos meses más tarde vendría una pandemia que nos obligaría a pasar el 200% del tiempo juntos. Y por si fuera poco, encima, trabajando en la misma empresa.</p>
@@ -101,12 +101,12 @@ function SectionCarta() {
         <p>Ahora vivimos deambulando entre provincias. Barcelona, Lleida y Segovia es donde tenemos trocitos de nuestro corazón, en cada una de las personas que las habitan y que hoy estáis leyendo estos párrafos.</p>
         <p>¡¡¡Esperamos que disfrutéis tanto como nosotros de nuestro día, un abrazo muuuy grande!!!</p>
         <br />
-        <p>En el <b>formulario de asistencia</b> (más abajo) debes confirmar si vas a asistir a la boda y un cuestionario sobre alergenos. Confírmanos tu asistencia lo antes posible, por favor. Así organizarlo todo nos será mucho más fácil.
+        <p>En el <b>formulario de asistencia </b> (más abajo) debes confirmar si vas a asistir a la boda y un cuestionario sobre alérgenos. Confírmanos tu asistencia lo antes posible, por favor. Así organizarlo todo nos será mucho más fácil.
         </p>
         <p><b>Recuerda, “Tu presencia es nuestro regalo más preciado, por eso esta invitación es personal e intransferible”</b>
         </p>
         <p>Esperamos verte muy pronto. ¡Mil besos!</p>
-        <p>Dani i Clàudia</p>
+        <p>Dani y Clàudia</p>
       </section>
     )
   }
@@ -127,8 +127,8 @@ function SectionCalendari() {
               <p className={styles.bloc_subtitol}>
                 &#127865; <b>Canya o copeta de vi prèvia</b></p>
               <p className={styles.bloc_detall}>
-                Si arribes puntual, pots prendre alguna cosa en els bars de la Porxada o del voltat,
-                els quals tens assenyalats en el pla adjunt. &#127867;</p>
+                Si arribes puntual, pots prendre alguna cosa als bars de la Porxada o del voltant,
+                els quals tens assenyalats en el plànol adjunt. &#127867;</p>
             </div>
             <div className={styles.bloc_hora}>
               <h2 className={styles.bloc_titol_hora}>
@@ -154,8 +154,7 @@ function SectionCalendari() {
               <p className={styles.bloc_detall}>
                 Ens desplacem fins a la masia. </p>
               <p className={styles.bloc_detall}>
-                Ja ets aquí, així que agafa la teva copeta de benvinguda i gaudeix mentre arriben els convidats
-                i els &quot;protas&quot; de la festa. &#128521;&#127863;</p>
+                Ja ets aquí, així que agafa la teva copeta de benvinguda i gaudeix mentre arriben tots els convidats. &#128521;&#127863;</p>
             </div>
           </div>
 
@@ -232,8 +231,7 @@ function SectionCalendari() {
               <p className={styles.bloc_detall}>
                 Nos desplazamos hasta la masía. </p>
               <p className={styles.bloc_detall}>
-                Ya estás aquí, así que coge tu copita de bienvenida y disfruta mientras llegan los invitados
-                y los &quot;protas&quot; de la fiesta. &#128521;&#127863;</p>
+                Ya estás aquí, así que coge tu copita de bienvenida y disfruta mientras llegan todos los invitados. &#128521;&#127863;</p>
             </div>
           </div>
 
@@ -255,7 +253,7 @@ function SectionCalendari() {
               <h2 className={styles.bloc_titol_hora}>19:30h - Sopada (Cena)</h2>
               <p className={styles.bloc_subtitol}>&#129366; <b>¡Hora de Cenar!</b></p>
               <p className={styles.bloc_detall}>
-                Tenemos distintas cocas y dulces por si te ha dado hambre.</p>
+                Tenemos distintas cocas y dulces para matar el gusanillo.</p>
             </div>
             <div className={styles.bloc_hora}>
               <h2 className={styles.bloc_titol_hora_f}>¡Rememora y comparte!</h2>
@@ -271,19 +269,41 @@ function SectionCalendari() {
   }
 }
 
+
+
 function SectionFormulari() {
   if (IsCat()) {
     return (
       <section>
-        <h1>Formulari d&apos;assistència</h1>
-        <h4>Si teniu qualsevol dubte ens podeu contactar tant per Whatsapp com per telèfon.</h4>
+        <h1 style={{ textAlign: "center" }}>Necessitem la teva confirmació</h1>
+        <div className={styles.main_botton}>
+          <h3><a style={{color: 'white', textDecoration: 'unset'}}
+          href='https://docs.google.com/forms/d/e/1FAIpQLSf2eCvQpioCZ1syxQjiLxGDFWyqrWfrzmiL6imqAgHLL-jquQ/viewform?usp=header' target='blank'>
+            Obrir el formulari
+          </a></h3>
+        </div>
+        <br />
+        <p style={{ textAlign: "center" }}>
+          Si tens qualsevol dubte ens pots contactar tant per Whatsapp com per telèfon.
+        </p>
+        
       </section>
     )
   } else {
     return (
       <section>
-        <h1>Formulario de asistencia</h1>
-        <h4>Si tenéis cualquier duda nos podéis contactar tanto por Whatsapp como por teléfono.</h4>
+        <h1 style={{ textAlign: "center" }}>Necesitamos tu confirmación</h1>
+        <div className={styles.main_botton}>
+          <h3><a style={{color: 'white', textDecoration: 'unset'}} 
+          href='https://docs.google.com/forms/d/e/1FAIpQLSf2eCvQpioCZ1syxQjiLxGDFWyqrWfrzmiL6imqAgHLL-jquQ/viewform?usp=header' target='blank'>
+            Abrir el formulario
+          </a></h3>
+        </div>
+        <br />
+        <p style={{ textAlign: "center" }}>
+          Si tenéis cualquier duda nos podéis contactar tanto por Whatsapp como por teléfono.
+        </p>
+        
       </section>
     )
   }
@@ -298,10 +318,10 @@ export default function Home() {
     <div>
       <div className={styles.header_background}>
         <picture>
-          <source media="(max-width: 600px)" srcSet="/sample-next-app/capcelera_mobile.png" />
+          <source media="(max-width: 600px)" srcSet="/invitacio/capcelera_mobile.png" />
           <img
             className='center-fit'
-            src="/sample-next-app/capcelera_desktop_ics.png"
+            src="/invitacio/capcelera_desktop_ics.png"
             alt="Wellcome"
             width={0}
             height={0}
@@ -318,7 +338,7 @@ export default function Home() {
           {Array.from({ length: totalImages }).map((_, index) => (
             <Image
               key={index}
-              src={`/sample-next-app/photos/img${index}.jpg`}
+              src={`/invitacio/photos/img${index}.jpg`}
               alt={`Foto ${index + 1}`}
               width={0}
               height={0}
@@ -329,7 +349,7 @@ export default function Home() {
           ))}
           <Image
             key={totalImages + 1}
-            src={`/sample-next-app/photos/gif1.gif`}
+            src={`/invitacio/photos/gif1.gif`}
             alt={`Foto ${totalImages + 2}`}
             width={0}
             height={0}
@@ -350,20 +370,89 @@ export default function Home() {
 
 
         <section>
-          <h1>Granollers</h1>
+          <h1>Información útil</h1>
+
+          <div className={styles.contenidor_targeta_info_b}>
+            <div className={styles.targeta_info_a}>
+              <div className={styles.image_emo_container}><Image
+                className='center-fit'
+                src="/invitacio/point.png"
+                alt="Ubicació"
+                width={0}
+                height={0}
+                style={{ width: '40%', height: 'auto' }}
+              /></div>
+              <div className={styles.inline_block}>
+                <h5>Ajuntament de Granollers</h5>
+                <p style={{textAlign: 'center'}}>
+                <a style={{color: 'rgb(225 96 1 / 91%)', textDecoration: 'underline'}} href='https://maps.app.goo.gl/ye9TL6sBceB6GMa6A' target='blank'>https://maps.app.goo.gl/ye9TL6sBceB6GMa6A</a></p>
+                <p>Plaça de la Porxada, 6, 08401 - Granollers, Barcelona</p>
+                
+              </div>
+            </div>
+            <div className={styles.targeta_info_b}>
+              <div className={styles.image_emo_container}><Image
+                className='center-fit'
+                src="/invitacio/point.png"
+                alt="Ubicació"
+                width={0}
+                height={0}
+                style={{ width: '40%', height: 'auto' }}
+              /></div>
+              <div className={styles.inline_block}>
+                <h5>Masia <i>El Folló</i></h5>
+                <p style={{textAlign: 'center'}}>
+                <a style={{color: 'rgb(32 151 86)', textDecoration: 'underline'}} href='https://maps.app.goo.gl/x1FCPJ1hXHTJnhqf9' target='blank'>https://maps.app.goo.gl/x1FCPJ1hXHTJnhqf9</a></p>
+                <p>Masía El Folló, Carrer Diseminado S-N, 08593 - Tagamanent, Barcelona</p>
+                
+              </div>
+            </div>
+            <div className={styles.targeta_info_c}>
+              <div className={styles.image_emo_container}><Image
+                className='center-fit'
+                src="/invitacio/dress_icon.png"
+                alt="Ubicació"
+                width={0}
+                height={0}
+                style={{ width: '40%', height: 'auto' }}
+              /></div>
+              <div className={styles.inline_block}>
+                <h5>Dress code</h5>
+                <p style={{textAlign: "center"}}>
+                  Dressy casual: semiformal</p><br />
+              </div>
+            </div>
+            <div className={styles.targeta_info_d}>
+              <div className={styles.image_emo_container}><Image
+                className='center-fit'
+                src="/invitacio/hotel2.png"
+                alt="Ubicació"
+                width={0}
+                height={0}
+                style={{ width: '40%', height: 'auto' }}
+              /></div>
+              <div className={styles.inline_block}>
+                <h5>Allotjament / Taxi</h5>
+                <p>Si necesitáis alojamiento o taxi, nos podéis contactar para ofreceros referencias y contactos.</p>
+              </div>
+            </div>
+          </div>
+          <br /><br />
+          <h2>Granollers</h2>
           <Image
             className='center-fit'
-            src="/sample-next-app/mapa_grano_b.png"
+            src="/invitacio/mapa_grano_b.png"
             alt="Wellcome"
             width={0}
             height={0}
             style={{ width: '100%', height: 'auto' }}
           />
-          <br /><br />
-          <h1>Masia <i>El Folló</i></h1>
+          <br /><br /><br />
+          <h2>Masia <i>El Folló</i></h2>
+          <p>Saliendo de Granollers dirección Vic, la masía se encuentra a 20 minutos por la C-17.</p>
           <Image
             className='center-fit'
-            src="/sample-next-app/mapa_follo_b.png"
+            src="/invitacio/mapa_follo_b.png"
             alt="Wellcome"
             width={0}
             height={0}
@@ -376,7 +465,7 @@ export default function Home() {
         <div className={styles.footer_container_relative}>
           <Image
             className='center-fit'
-            src="/sample-next-app/footer_edit_d.png"
+            src="/invitacio/footer_edit_d.png"
             alt="Wellcome"
             width={0}
             height={0}
@@ -386,7 +475,7 @@ export default function Home() {
             Fins aviat!
           </h4>
         </div>
-        <div style={{ justifySelf: "center", fontSize: "small" }}> · Invitació dissenyada per nosaltres amb molt  &#129505; · Especialment dedicada al Tacu · </div>
+        <div style={{ textAlign: "center", fontSize: "small", padding: "20px" }}> · Invitació dissenyada per nosaltres amb molt  &#129505; · Especialment dedicada al Tacu · </div>
         <br />
       </footer>
     </div>
@@ -397,7 +486,7 @@ export default function Home() {
       <main className={styles.main}>
         <Image
           className={styles.logo}
-          src="/sample-next-app/next.svg"
+          src="/invitacio/next.svg"
           alt="Next.js logo"
           width={180}
           height={38}
@@ -422,7 +511,7 @@ export default function Home() {
           >
             <Image
               className={styles.logo}
-              src="/sample-next-app/vercel.svg"
+              src="/invitacio/vercel.svg"
               alt="Vercel logomark"
               width={20}
               height={20}
@@ -447,7 +536,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/sample-next-app/file.svg"
+            src="/invitacio/file.svg"
             alt="File icon"
             width={16}
             height={16}
@@ -461,7 +550,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/sample-next-app/window.svg"
+            src="/invitacio/window.svg"
             alt="Window icon"
             width={16}
             height={16}
@@ -475,7 +564,7 @@ export default function Home() {
         >
           <Image
             aria-hidden
-            src="/sample-next-app/globe.svg"
+            src="/invitacio/globe.svg"
             alt="Globe icon"
             width={16}
             height={16}
