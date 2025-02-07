@@ -37,6 +37,57 @@ function IsCat() {
   else return false
 }
 
+
+function BlocHotel() {
+  if (IsCat()) {
+    return (
+      <div className={styles.targeta_info_d}>
+        <div className={styles.image_emo_container}>
+          <Image
+            className='center-fit'
+            src="/invitacio/hotel2.png"
+            alt="Ubicació"
+            width={0}
+            height={0}
+            style={{ width: '40%', height: 'auto' }}
+          /></div>
+        <div className={styles.inline_block}>
+          <h5>Allotjament / Taxi</h5>
+          <p style={{ padding: "10px 25px 10px 25px" }} >
+            Si necessiteu allotjament o taxi, ens podeu contactar per facilitar-vos referències.
+          </p>
+        </div>
+      </div>
+    )
+  } else {
+    return (
+      <BlocHotelEs />
+    )
+  }
+}
+
+function BlocHotelEs() {
+  return (
+    <div className={styles.targeta_info_d}>
+      <div className={styles.image_emo_container}>
+        <Image
+          className='center-fit'
+          src="/invitacio/hotel2.png"
+          alt="Ubicació"
+          width={0}
+          height={0}
+          style={{ width: '40%', height: 'auto' }}
+        /></div>
+      <div className={styles.inline_block}>
+        <h5>Alojamiento / Taxi</h5>
+        <p style={{ padding: "10px 25px 10px 25px" }} >
+          Si necesitáis alojamiento o taxi, nos podéis contactar para ofreceros referencias y contactos.
+          </p>
+      </div>
+    </div>
+  )
+}
+
 function SectionCarta() {
   if (IsCat()) {
     return (
@@ -85,7 +136,14 @@ function SectionCarta() {
   }
   else {
     return (
-      <section>
+      <SectionCartaEs />
+    )
+  }
+}
+
+function SectionCartaEs() {
+  return (
+<section>
         <h1>¡Que sí! ¡¡Nos casamos!!</h1><br />
 
         <Suspense>
@@ -108,8 +166,7 @@ function SectionCarta() {
         <p>Esperamos verte muy pronto. ¡Mil besos!</p>
         <p>Dani y Clàudia</p>
       </section>
-    )
-  }
+  )
 }
 
 function SectionCalendari() {
@@ -277,8 +334,8 @@ function SectionFormulari() {
       <section>
         <h1 style={{ textAlign: "center" }}>Necessitem la teva confirmació</h1>
         <div className={styles.main_botton}>
-          <h3><a style={{color: 'white', textDecoration: 'unset'}}
-          href='https://docs.google.com/forms/d/e/1FAIpQLSf2eCvQpioCZ1syxQjiLxGDFWyqrWfrzmiL6imqAgHLL-jquQ/viewform?usp=header' target='blank'>
+          <h3><a style={{ color: 'white', textDecoration: 'unset' }}
+            href='https://docs.google.com/forms/d/e/1FAIpQLSf2eCvQpioCZ1syxQjiLxGDFWyqrWfrzmiL6imqAgHLL-jquQ/viewform?usp=header' target='blank'>
             Obrir el formulari
           </a></h3>
         </div>
@@ -286,7 +343,7 @@ function SectionFormulari() {
         <p style={{ textAlign: "center" }}>
           Si tens qualsevol dubte ens pots contactar tant per Whatsapp com per telèfon.
         </p>
-        
+
       </section>
     )
   } else {
@@ -294,8 +351,8 @@ function SectionFormulari() {
       <section>
         <h1 style={{ textAlign: "center" }}>Necesitamos tu confirmación</h1>
         <div className={styles.main_botton}>
-          <h3><a style={{color: 'white', textDecoration: 'unset'}} 
-          href='https://docs.google.com/forms/d/e/1FAIpQLSf2eCvQpioCZ1syxQjiLxGDFWyqrWfrzmiL6imqAgHLL-jquQ/viewform?usp=header' target='blank'>
+          <h3><a style={{ color: 'white', textDecoration: 'unset' }}
+            href='https://docs.google.com/forms/d/e/1FAIpQLSf2eCvQpioCZ1syxQjiLxGDFWyqrWfrzmiL6imqAgHLL-jquQ/viewform?usp=header' target='blank'>
             Abrir el formulario
           </a></h3>
         </div>
@@ -303,10 +360,28 @@ function SectionFormulari() {
         <p style={{ textAlign: "center" }}>
           Si tenéis cualquier duda nos podéis contactar tanto por Whatsapp como por teléfono.
         </p>
-        
+
       </section>
     )
   }
+}
+
+function TitolInfoClau() {
+  if (IsCat()) {
+    return(
+      <h1>Informació clau</h1>
+    )
+  } else {
+    return(
+      <TitolInfoClauEs/>
+    )
+  }
+} 
+
+function TitolInfoClauEs() {
+  return (
+    <h1>Información clave</h1>
+  )
 }
 
 export default function Home() {
@@ -323,15 +398,15 @@ export default function Home() {
             className='center-fit'
             src="/invitacio/capcelera_desktop_ics.png"
             alt="Wellcome"
-            width={0}
-            height={0}
+            width={1280}
+            height={600}
             style={{ width: '100%', height: 'auto' }}
           />
         </picture>
       </div>
       <div className={styles.page}>
 
-        <Suspense><SectionCarta /></Suspense>
+        <Suspense fallback={<SectionCartaEs />}><SectionCarta /></Suspense>
 
 
         <div className={styles.photo_container}>
@@ -370,72 +445,62 @@ export default function Home() {
 
 
         <section>
-          <h1>Información útil</h1>
-
+          <Suspense fallback={<TitolInfoClauEs />}><TitolInfoClau /></Suspense>
+          <br />
           <div className={styles.contenidor_targeta_info_b}>
             <div className={styles.targeta_info_a}>
-              <div className={styles.image_emo_container}><Image
-                className='center-fit'
-                src="/invitacio/point.png"
-                alt="Ubicació"
-                width={0}
-                height={0}
-                style={{ width: '40%', height: 'auto' }}
-              /></div>
+              <div className={styles.image_emo_container}>
+                <Image
+                  className='center-fit'
+                  src="/invitacio/point.png"
+                  alt="Ubicació"
+                  width={0}
+                  height={0}
+                  style={{ width: '40%', height: 'auto' }}
+                /></div>
               <div className={styles.inline_block}>
                 <h5>Ajuntament de Granollers</h5>
-                <p style={{textAlign: 'center'}}>
-                <a style={{color: 'rgb(225 96 1 / 91%)', textDecoration: 'underline'}} href='https://maps.app.goo.gl/ye9TL6sBceB6GMa6A' target='blank'>https://maps.app.goo.gl/ye9TL6sBceB6GMa6A</a></p>
-                <p>Plaça de la Porxada, 6, 08401 - Granollers, Barcelona</p>
-                
+                <p style={{ textAlign: 'center' }}>
+                  <a style={{ color: 'rgb(225 96 1 / 91%)', textDecoration: 'underline', fontSize: 'small' }} href='https://maps.app.goo.gl/ye9TL6sBceB6GMa6A' target='blank'>https://maps.app.goo.gl/ye9TL6sBceB6GMa6A</a></p>
+                <p style={{ padding: "10px 25px 10px 25px" }}>Plaça de la Porxada, 6, 08401 - Granollers, Barcelona</p>
+
               </div>
             </div>
             <div className={styles.targeta_info_b}>
-              <div className={styles.image_emo_container}><Image
-                className='center-fit'
-                src="/invitacio/point.png"
-                alt="Ubicació"
-                width={0}
-                height={0}
-                style={{ width: '40%', height: 'auto' }}
-              /></div>
+              <div className={styles.image_emo_container}>
+                <Image
+                  className='center-fit'
+                  src="/invitacio/point.png"
+                  alt="Ubicació"
+                  width={0}
+                  height={0}
+                  style={{ width: '40%', height: 'auto' }}
+                /></div>
               <div className={styles.inline_block}>
                 <h5>Masia <i>El Folló</i></h5>
-                <p style={{textAlign: 'center'}}>
-                <a style={{color: 'rgb(32 151 86)', textDecoration: 'underline'}} href='https://maps.app.goo.gl/x1FCPJ1hXHTJnhqf9' target='blank'>https://maps.app.goo.gl/x1FCPJ1hXHTJnhqf9</a></p>
-                <p>Masía El Folló, Carrer Diseminado S-N, 08593 - Tagamanent, Barcelona</p>
-                
+                <p style={{ textAlign: 'center' }}>
+                  <a style={{ color: 'rgb(32 151 86)', textDecoration: 'underline', fontSize: 'small' }} href='https://maps.app.goo.gl/x1FCPJ1hXHTJnhqf9' target='blank'>https://maps.app.goo.gl/x1FCPJ1hXHTJnhqf9</a></p>
+                <p style={{ padding: "10px 25px 10px 25px" }}>Masía El Folló, Carrer Diseminado S-N, 08593 - Tagamanent, Barcelona</p>
+
               </div>
             </div>
             <div className={styles.targeta_info_c}>
-              <div className={styles.image_emo_container}><Image
-                className='center-fit'
-                src="/invitacio/dress_icon.png"
-                alt="Ubicació"
-                width={0}
-                height={0}
-                style={{ width: '40%', height: 'auto' }}
-              /></div>
+              <div className={styles.image_emo_container}>
+                <Image
+                  className='center-fit'
+                  src="/invitacio/dress_icon.png"
+                  alt="Ubicació"
+                  width={0}
+                  height={0}
+                  style={{ width: '40%', height: 'auto', paddingTop: '20px' }}
+                /></div>
               <div className={styles.inline_block}>
                 <h5>Dress code</h5>
-                <p style={{textAlign: "center"}}>
+                <p style={{ textAlign: "center" }}>
                   Dressy casual: semiformal</p><br />
               </div>
             </div>
-            <div className={styles.targeta_info_d}>
-              <div className={styles.image_emo_container}><Image
-                className='center-fit'
-                src="/invitacio/hotel2.png"
-                alt="Ubicació"
-                width={0}
-                height={0}
-                style={{ width: '40%', height: 'auto' }}
-              /></div>
-              <div className={styles.inline_block}>
-                <h5>Allotjament / Taxi</h5>
-                <p>Si necesitáis alojamiento o taxi, nos podéis contactar para ofreceros referencias y contactos.</p>
-              </div>
-            </div>
+            <Suspense fallback={<BlocHotelEs />}><BlocHotel /></Suspense>
           </div>
           <br /><br />
           <h2>Granollers</h2>
