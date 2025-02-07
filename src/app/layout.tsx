@@ -27,8 +27,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <meta property="og:description" content="Clàudia & Dani - Invitació" />
-      <meta property="og:image" itemProp="image" content="/invitacio/preview-invitacio.png" />
+      <meta property="og:title" content="Clàudia & Dani - Invitació" />
+      <meta property="og:description" content="🧡" />
+      <meta property="og:image" itemProp="image" content="https://daxin3.github.io/invitacio/preview-invitacio.png" />
+      <meta property="og:type" content="website" />
       
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
