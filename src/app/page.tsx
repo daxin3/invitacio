@@ -100,9 +100,9 @@ function SectionCarta() {
         </Suspense><br />
         <p>Estem superfeliços! <b>Reserva&apos;t la data</b> i prepara&apos;t per a riure, menjar, beure,
           ballar i passar-ho bé amb nosaltres.</p>
-        <p>Fa 9 anys ens vam conèixer a la universitat, segurament en una de les etapes més dures
+        <p>Fa gairebé 10 anys ens vam conèixer a la universitat, segurament en una de les etapes més dures
           que hem viscut fins al moment, encara que ara mateix dubtem si no és més dur l&apos;organització d&apos;un
-          casament.
+          casament. &#128521;
         </p>
         <p>Tres anys més tard vàrem decidir començar a viure junts, sense saber que uns mesos més
           tard arribaria una pandèmia que ens obligaria a passar el 200% del temps plegats. I per si
@@ -129,7 +129,7 @@ function SectionCarta() {
         <p><b>Recorda, “La teva presència és el nostre regal més preuat, per això aquesta
           invitació és personal i intransferible”</b>
         </p>
-        <p>Esperem veure&apos;t molt aviat. Molts petons!</p>
+        <p>Esperem veure&apos;t molt aviat. Molts petons! &#129505;</p>
         <p>Dani i Clàudia</p>
       </section>
     )
@@ -149,8 +149,11 @@ function SectionCartaEs() {
         <Suspense>
           <h3>Hola <RenderQueryName />,</h3>
         </Suspense><br />
-        <p>¡Estamos superfelices! <b>Resérvate la fecha</b> y prepárate para reír, comer, beber, bailar y pasarlo bien con nosotros.</p>
-        <p>Hace 9 años nos conocimos en la universidad, seguramente en una de las etapas más duras que hemos vivido por el momento, aunque ahora mismo dudamos si no es más dura la organización de una boda.
+        <p>¡Estamos superfelices! <b>Resérvate la fecha</b> y prepárate para reír, comer, beber, bailar 
+        y pasarlo bien con nosotros.</p>
+        <p>Hace casi 10 años nos conocimos en la universidad, seguramente en una de las etapas más duras 
+          que hemos vivido por el momento, aunque ahora mismo dudamos si no es más dura la organización 
+          de una boda. &#128521;
         </p>
         <p>Tres años más tarde nos aventuramos a vivir juntos sin saber que unos meses más tarde vendría una pandemia que nos obligaría a pasar el 200% del tiempo juntos. Y por si fuera poco, encima, trabajando en la misma empresa.</p>
         <p>Superada esa prueba, nos enamoramos ciegamente del amor más fiel y real que existe, nuestra querida Luna, que nos convirtió en mamá y papá, y que nos prepara para lo que vendrá más adelante.
@@ -163,7 +166,7 @@ function SectionCartaEs() {
         </p>
         <p><b>Recuerda, “Tu presencia es nuestro regalo más preciado, por eso esta invitación es personal e intransferible”</b>
         </p>
-        <p>Esperamos verte muy pronto. ¡Mil besos!</p>
+        <p>Esperamos verte muy pronto. ¡Mil besos! &#129505;</p>
         <p>Dani y Clàudia</p>
       </section>
   )
@@ -341,7 +344,7 @@ function SectionFormulari() {
         </div>
         <br />
         <p style={{ textAlign: "center" }}>
-          Si tens qualsevol dubte ens pots contactar tant per Whatsapp com per telèfon.
+          Si tens qualsevol dubte ens pots contactar tant per WhatsApp com per telèfon.
         </p>
 
       </section>
@@ -358,7 +361,7 @@ function SectionFormulari() {
         </div>
         <br />
         <p style={{ textAlign: "center" }}>
-          Si tenéis cualquier duda nos podéis contactar tanto por Whatsapp como por teléfono.
+          Si tenéis cualquier duda nos podéis contactar tanto por WhatsApp como por teléfono.
         </p>
 
       </section>
@@ -507,7 +510,7 @@ export default function Home() {
           <Image
             className='center-fit'
             src="/invitacio/mapa_grano_b.png"
-            alt="Wellcome"
+            alt="Wellcome to Granollers"
             width={0}
             height={0}
             style={{ width: '100%', height: 'auto' }}
@@ -517,8 +520,8 @@ export default function Home() {
           <p>Saliendo de Granollers dirección Vic, la masía se encuentra a 20 minutos por la C-17.</p>
           <Image
             className='center-fit'
-            src="/invitacio/mapa_follo_b.png"
-            alt="Wellcome"
+            src="/invitacio/elfollomasiadib.png"
+            alt="Wellcome to Masia 'El Folló'"
             width={0}
             height={0}
             style={{ width: '100%', height: 'auto' }}
