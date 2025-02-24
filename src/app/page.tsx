@@ -226,14 +226,14 @@ function SectionCalendari() {
                 Amb platerets casolans i de temporada, preparats per la Mercè i el seu equip.</p>
             </div>
             <div className={styles.bloc_hora}>
-              <h2 className={styles.bloc_titol_hora}>16:00h - Festa!</h2>
+              <h2 className={styles.bloc_titol_hora}>17:30h - Festa!</h2>
               <p className={styles.bloc_subtitol}>&#127881; <b>A ballar!</b></p>
               <p className={styles.bloc_detall}>
                 Barra lliure i música per a tots! <br /> Per cert..., ja heu completat tots els jocs?</p>
 
             </div>
             <div className={styles.bloc_hora}>
-              <h2 className={styles.bloc_titol_hora}>19:30h - Sopada</h2>
+              <h2 className={styles.bloc_titol_hora}>21:00h - Sopada</h2>
               <p className={styles.bloc_subtitol}>&#129366; <b>Per recuperar forces</b></p>
               <p className={styles.bloc_detall}>
                 Tenim diferents coques i dolços per matar el cuquet.</p>
@@ -303,14 +303,14 @@ function SectionCalendari() {
                 Con platitos caseros y de temporada, preparados por Mercè y su equipo.</p>
             </div>
             <div className={styles.bloc_hora}>
-              <h2 className={styles.bloc_titol_hora}>16:00h - ¡Fiesta!</h2>
+              <h2 className={styles.bloc_titol_hora}>17:30h - ¡Fiesta!</h2>
               <p className={styles.bloc_subtitol}>&#127881; <b>A bailar</b></p>
               <p className={styles.bloc_detall}>
                 ¡Barra libre y música para todos! <br />Por cierto... ¿Ya habéis completado todos los juegos? </p>
 
             </div>
             <div className={styles.bloc_hora}>
-              <h2 className={styles.bloc_titol_hora}>19:30h - Sopada (Cena)</h2>
+              <h2 className={styles.bloc_titol_hora}>21:00h - Sopada (Cena)</h2>
               <p className={styles.bloc_subtitol}>&#129366; <b>¡Hora de Cenar!</b></p>
               <p className={styles.bloc_detall}>
                 Tenemos distintas cocas y dulces para matar el gusanillo.</p>
