@@ -131,7 +131,8 @@ function SectionCarta() {
         </p>
         <p>Esperem veure&apos;t molt aviat. Molts petons! &#129505;</p>
         <p>Dani i Clàudia</p>
-      </section>
+      </section> 
+      
     )
   }
   else {
